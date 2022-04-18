@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rormularios en HTML</title>
+</head>
+<body>
+    <h1>completa tu información</h1>
+
+    <form action="">
+        <p>Nombre: <input type="text" name="nombre" required size="20" placeholder="escribe tus nombres"></p>
+        <p>Apellidos: <input type="text" name="apellido" size="20" placeholder="escribe tus dos apellidos"></p>
+        <p>Nacionalidad: <input type="text" name="nacionalidad" value="perú" size="15" disabled>
+
+         <h3>Escribe tu usuario y contraseña</h3>
+
+         <p>Usuario: <input type="text" name="usuario" maxlength="8"></p> 
+         <p>Contraseña: <input type="password" name="password" minlength="6" maxlength="8"></p>  
+        </p>
+        <input type="button" value="Boton nuevo">
+        <p><button type="button" style="background-color: blue; width: 30px;height: 30px; color: azure;">
+            ok
+        </button></p>
+        <p>Sexo: <input type="radio" value="H" name="hm"> Hombre
+                  <input type="radio" value="M" name="hm"> Mujer
+        </p>
+    </form>
+</body>
+</html>
