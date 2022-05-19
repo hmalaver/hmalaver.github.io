@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgb(55, 193, 235);
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(233, 48, 28);
+}
+
+nav a{
+    font-weight: 700;/*negrita*/
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+.historia{
+    background-color: rgb(61, 154, 225);
+    text-align: center;
+    padding: 15px;
+}
+
+.parrafos{
+    background-color: ghostwhite;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandera{
+    padding: 0 50px 50px;
+    color: blue;
+    text-align: center;
+    float: center;
+}
+
+.bandera img{
+    width: 450px;
+    height: 350px;
+}
+
+.mapa{
+    padding: 0 50px 50px;
+    color: blue;
+    text-align: center;
+    float: center;
+}
+
+.mapa img{
+    width: 450px;
+    height: 350px;
+}
+
+.texto{
+    width: 70%;
+    float: left;
+}
+
+.apartado{
+    width: 30%;
+    float: right;
+}
+
+.fotos{
+    background-color: rgb(20, 138, 216);
+    text-align: center;
+    padding: 15px;
+
+}
+
+.turismo{
+    padding: 0 30px 30px;
+}
+.turismo img{
+    width: 350px;
+    height: 250px;
+}
+
+.footer{
+    background-color: blue;
+    text-align: center;
+}
+@media (max-width:500px){
+    header{
+        flex-direction: column;
+    }
+    a{
+        color: gold;
+    }
+    h2{
+        color: rgb(236, 56, 36);
+    }
+}
+

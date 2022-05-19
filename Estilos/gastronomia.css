@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+div a{
+    text-decoration: none;
+    background-color: rgb(10, 140, 246);
+    
+}
+
+.gastronomia{
+    background-color: blue;
+    text-align: center;
+    padding: 30px;
+}
+
+img:hover{
+    opacity: .5;
+    transition: .4s;
+}
+.platos{
+    background-color: rgb(32, 208, 252);
+    padding: 10px;
+}
+
+.ceviche{
+    color: orange;
+    width: 50%;
+    float: left;
+}
+
+.imgceviche{
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+
+.texto1{
+    background-color: ghostwhite;
+    width: 50%;
+} 
+
+.apartado{
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+
+.papa{
+    color: orange;
+    width: 50%;
+}
+
+.texto2{
+    background-color: ghostwhite;
+    width: 50%;
+
+}
+
+.lomosaltado{
+    color: orange;
+    width: 50%;
+    
+}
+
+.texto3{
+    background-color: ghostwhite;
+    width: 50%;
+}
+
+.imglomo{
+    width: 40%;
+    height: 50%;
+    float: right;
+}
+
+.aji{
+    color: orange;
+    width: 50%;
+}
+.parrafos{
+    background-color: ghostwhite;
+}
+

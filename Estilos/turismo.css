@@ -1,0 +1,79 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: rgb(31, 164, 77);
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    background-color: rgb(94, 246, 68);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+}
+
+img:hover{
+    opacity: .4;
+    transition: .5s;
+}
+
+.parrafos{
+    background-color: ghostwhite;
+}
+.tour{
+    background-color: rgb(100, 239, 79);
+    padding: 10px;
+}
+
+.destinos{
+    background-color: rgb(67, 245, 67);
+    padding: 10px;
+}
+
+.kuelap{
+    color: orange;
+}
+
+.imgkuelap{
+    width: 600px;
+    height: 400px;
+    float: left;
+    padding: 0 20px 20px;
+}
+
+.machupicchu{
+    color: orange;
+} 
+
+.imgmachupicchu{
+    width: 600px;
+    height: 400px;
+    padding: 0 20px 20px;
+}
+
+.nazca{
+    color: orange;
+}
+
+.imgnazca{
+    width: 600px;
+    height: 400px;
+    padding: 0 20px 20px;
+}
+
+.gocta{
+    color: orange;
+}
+
+.imggocta{
+    width: 600px;
+    height: 400px;
+    padding: 0 20px 20px;
+}
