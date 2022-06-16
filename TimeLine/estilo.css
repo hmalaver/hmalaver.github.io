@@ -1,0 +1,133 @@
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+body {
+	background: #DCDFD9;
+    font-family: 'Readex Pro', sans-serif;
+	color: #1b3231;
+}
+
+.titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 35vh;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+/*crear la linea de separacion*/
+.contenedor::after {
+	/* Insertan contenido antes de la acción inicial */
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: #1b3231;
+	position: absolute;
+	top: 0;
+	/* calcular el ancho de un elemento */
+	left: calc(50% - 1px);
+	/* Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor. */
+	z-index: 1;
+}
+
+.evento {
+	display: flex;
+	/* alinea los elementos del contenedor flexible */
+	justify-content: space-between;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+/*un circulo en la linea de separacion*/
+.evento::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: #DCDFD9;
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.fecha {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: calc(42% + 20px);
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.foto {
+	width: 42%;
+	border: 10px solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*como se modificara el tamaño de la foto*/
+.foto::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.inicio{
+	background-color: rgb(24, 16, 245);
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Representa elementos cuya posición numérica en una serie de hermanos es impar */
+.evento:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.evento:nth-child(even) .fecha {
+	justify-content: end;
+}
+
+.evento:nth-child(even) .foto::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	right: initial;
+	left: -50px;
+}
+
+
+
+
