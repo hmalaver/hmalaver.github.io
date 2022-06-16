@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+.titulo{
+    text-align: center;
+    color: blue;
+}
+
+button{
+    background-color: aquamarine;
+    text-decoration: none;
+}
+
+.contenedor{
+    height: 100vh;
+    display: flex;
+    /*los div internos esten centrados*/
+    align-items: center;
+}
+
+
+.lista{
+    display: flex;
+    /*no se visualise la barra de desplazamiento*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0;
+}
+
+.animal{
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    /*borde exterior a la foto*/
+    outline: 2px solid green;
+    cursor: pointer;
+    text-align: center;
+    color: maroon;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    /*se usa para especificar como se debe cambiar el tamaño de un <img>*/
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
