@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+
+.titulo{
+    text-align: center;
+    color: blue;
+}
+
+.foto{
+    width: 700px;
+    height: 900px;
+    align-items: center;
+}
+
+button{
+    background-color: aquamarine;
+    text-decoration: none;
+    color: blue;
+}
